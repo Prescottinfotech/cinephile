@@ -1,0 +1,94 @@
+.login-page
+{
+    background-image: url(img/cinephile-lr-back.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.login-page::before
+{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-image: url(img/back_layer.png);
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+}
+.signin_page_logo
+{
+    position: relative;
+    margin-bottom: 20px;
+}
+.main_signin_form
+{
+    margin-left: 10%;
+}
+.login-page form
+{
+    position: relative;
+    z-index: 1;
+    width: 25%;
+    margin-top: 20px;
+}
+.login-page form input
+{
+    padding: 15px 20px;
+    background-color: #040404;
+    color: #fff;
+    font-size: 15px;
+    border:none;
+    border-radius: 5px;
+    width: calc(100% - 20px);
+    margin: 10px;
+}
+.login-page form label
+{
+    display: none!important;
+}
+.login-page h2
+{
+    font-size: 36px;
+    font-weight: bold;
+    color: #fff;
+    position: relative;
+    z-index: 1;
+}
+.login-page p
+{
+    color: #fff;
+    font-size: 18px;
+    margin-top: 10px;
+    position: relative;
+    z-index: 1;
+    width: 35%;
+}
+.login-page form input:focus
+{
+    outline: none;
+}
+input:-webkit-autofill-selected,
+input:-webkit-autofill-selected:hover, 
+input:-webkit-autofill-selected:focus, 
+input:-webkit-autofill-selected:active
+{
+    background-color: none;
+}
+.submit-btn
+{
+    background-image: linear-gradient(to right, #BC4699, #5760AD);
+    margin-top: 0!important;
+}
+.submit-btn:hover
+{
+    background-image: linear-gradient(to right, #5760AD, #BC4699);
+}
+.aemail{
+    color: red;
+}
